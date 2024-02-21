@@ -1,0 +1,170 @@
+/*  ----------------------- Games -------------------------------- */
+
+.game-parent{
+    background-color: #2C3333;
+}
+
+.main-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gaming-wrapper{
+    /* border: 1px solid black; */
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #CBE4DE;
+}
+
+.the-game-box{
+    display: flex;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons .btn{
+    margin: 20px 10px;
+}
+
+.addtocart{
+    align-self: center;
+}
+
+.game-img{
+    max-width: 500px;
+    margin-right: 60px;
+}
+
+.games-desc{
+    /* max-width: 600px; */
+    margin: 10px auto;
+}
+
+.games-desc .price{
+    text-align: start;
+}
+
+/*  ----------------------- Shop -------------------------------- */
+
+.parent{
+    border: 1px solid black;
+    min-height: 85vh;
+    background-image: url('../ImagesFile/recent_reviews_bg.png');
+}
+
+
+.cart-main{
+    background-color: #CBE4DE;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.cart-main h2{
+    align-self: center;
+}
+
+.cart-main .btn{
+    align-self: center;
+}
+
+
+/*  ------------------------- footer ------------------------------ */
+
+.line{
+    border: 1px solid yellow;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.others{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width:1400px){
+    .gaming-wrapper{
+        max-width: 90%;
+    }
+}
+
+
+
+/* ----------- games ------------- */
+
+@media (max-width:950px){
+    .the-game-box{
+        display: block;
+        text-align: center;
+    }
+    .games-desc .name, .games-desc .price{
+        text-align: center;
+    }
+    .games-desc .details{
+        text-align: start;
+    }
+    .the-game-box .game-img{
+        width: 100%;
+        margin-right: 0;
+    }
+    .games-desc .buttons{
+        justify-content: space-evenly;
+    }
+    .buttons .btn{
+        width: 70%;
+    }
+}
+
+
+/* ----------- shop ------------- */
+
+@media (max-width:700px){
+    .cart-main{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media (max-width:1400px){
+    .cart-main{
+        display: block;
+        text-align: center;
+    }
+    .cart-main h1{
+        display: inline-block;
+        width: 70%;
+    }
+    .cart-main h2{
+        display: inline-block;
+        width: 30%;
+        justify-content: center;
+    }
+}
+
+@media (max-width:830px){
+    .cart-main h1 , .cart-main h2{
+        width: 100%;
+    }
+}
+
+/* ----------- footer ------------- */
+
+@media (max-width: 750px){
+    .others{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
