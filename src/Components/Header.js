@@ -20,9 +20,6 @@ return (
                         <li className="nav-item">
                             <Link className="nav-link active mx-5 fs-5" to="/games">Games</Link>
                         </li>
-                        {/* <li className="nav-item">
-                            <Link className="nav-link active mx-5 fs-5" to="/games">Pricing</Link>
-                        </li> */}
                         <li className="nav-item">
                             <Link className="nav-link active mx-5 fs-5" to="/shop">Shop</Link>
                         </li>
